@@ -41,8 +41,6 @@
 	position: absolute;
 	top: 7%;
 	left: 15%;
-
-
 }
 
 .btns {
@@ -199,7 +197,7 @@
 	.heading {
 		position: relative;
 		top: 10px;
-		left: 5%;
+		left: 3%;
 	}
 
 	.image-container {
