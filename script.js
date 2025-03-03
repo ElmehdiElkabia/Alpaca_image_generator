@@ -402,7 +402,7 @@ function handleAction(e) {
         const neckNumber = Math.floor(Math.random() * neckBtn.length-1);
         neck.src = `assets/alpaca/neck/${neckBtn[neckNumber].value}.png`;
     } else if (actionToTakePlace == "download") {
-        const element = document.getElementById("imageContainer");
+        const element = document.getElementById("image-download");
 
         html2canvas(element).then(canvas => {
             const imageURL = canvas.toDataURL('image/png');
