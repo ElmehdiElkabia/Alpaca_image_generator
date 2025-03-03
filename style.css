@@ -1,226 +1,236 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Inter", serif;
-    
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", serif;
+
 }
 
-.container
-{
-    width: 100vw;
-    height: 100% !important;
-    min-height: 100vh;
-    background-color: #EEECEE;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-   
-    
+.container {
+	width: 100vw;
+	height: 100% !important;
+	min-height: 100vh;
+	background-color: #EEECEE;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+
 }
 
-.image-container
-{
-    height: 100% !important; 
+.image-container {
+	width: 30vw !important;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+}
 
-    width: 30vw !important;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-   
-    
-    
+.background,
+#background {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	position: relative;
+
+
 }
-.background , #background
-{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    padding:0;
-    position: relative;
-    
-   
+
+.heading {
+	position: absolute;
+	top: 7%;
+	left: 15%;
+
+
 }
-.heading
-{
-    position: absolute;
-    top: 7%;
-    left:15%;
-    
-   
+
+.btns {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
-.btns
-{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.action-btn
-{
-	margin:3% 10%;
+
+.action-btn {
+	margin: 3% 10%;
 	background-color: #23509C;
 	color: #EEECEE;
-	border: none;
+	border: 1px solid #23509C;
+	border-radius: 15px;
 	padding: 2%;
-	border-radius: 5px;
 	height: 50px;
 	font-size: 20px;
 }
-.ears , .hair , .neck , .nose ,.eyes ,.mouth , .leg ,.acce
-{
-    
-    display: flex;
-    position: absolute;
-    top:100%;
-    left:50%;
-    transform: translate(-50%, -100%);
-    height: 100% !important;
-    
-}
-.ears
-{
-    height: 80%;
-    
-    background-color:transparent;
-    
-}
-.hair
-{
-    height: 80%;
-    
-    background-color:transparent;
-    z-index: 1;
-}
-.neck
-{
-    height: 80%;
-    
-    background-color:transparent;
-}
-.nose
-{
-    height: 80%;
-    
-    background-color:transparent;
-}
-.eyes
-{
-    height: 80%;
-    
-    background-color:transparent;
-    z-index: 2;
-}
-.mouth
-{
-    height: 80%;
-    
-    background-color:transparent;
-    
-}
-.leg
-{
-    height: 80%;
-    
-    background-color:transparent;
-    
-}
-.acce
-{
-    height: 80%;
-    
-    background-color:transparent;
-    z-index: 2;
-    
-}
-.modifications
-{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+
+.action-btn:hover {
+	color: #1A3C7A;
+	border: 1px solid #23509C;
+	background: transparent;
+	border-radius: 15px;
 }
 
-.parts , .types
-{
-    background-color: #EEECEE;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-	padding: 10px;
-    
-}
-.btn
-{
-    width:fit-content;
-    display: flex;
-    padding: 2%;
-    border: 1px solid #23509C;
-    background: transparent;
-    border-radius: 15px;
-    color: #23509C;
-    font-weight: medium;
-    font-size: larger;
-    transition: ease-out 0.4s;
-    margin: 5px;
-    
-}
-.btn:hover , .btn:focus
-{
-    background-color: #23509C;
-    color: #EEECEE;
-}
-.modifications
-{
-    padding: 10px;
-    margin: 10px;
-}
+.ears,
+.hair,
+.neck,
+.nose,
+.eyes,
+.mouth,
+.leg,
+.acce {
 
-
-
-@media (max-width:750px){
-
-.container
-{
 	display: flex;
-   flex-direction: column;
-   height: 100vh;
-}
-.heading
-{
-    position: relative;
-    top: 10px;
-    left: 0;
-}
-.image-container
-{
-    
-    height: 45vh !important; 
-    width: 90vw !important;
-    display: flex;
-    position: relative;
-    margin: 10%;
-    
-    
-}  
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -100%);
+	height: 100% !important;
 
-.background{
+}
 
-    position: relative;
+.ears {
+	height: 80%;
+
+	background-color: transparent;
+
 }
-.modifications
-{
-   
-    width: 100%;
-} 
-.ears , .hair , .neck , .nose ,.eyes ,.mouth , .leg ,.acce
-{
-    position: absolute;
-    height: 80% !important;
-    
-    
-    
+
+.hair {
+	height: 80%;
+
+	background-color: transparent;
+	z-index: 1;
 }
+
+.neck {
+	height: 80%;
+
+	background-color: transparent;
+}
+
+.nose {
+	height: 80%;
+
+	background-color: transparent;
+}
+
+.eyes {
+	height: 80%;
+
+	background-color: transparent;
+	z-index: 2;
+}
+
+.mouth {
+	height: 80%;
+
+	background-color: transparent;
+
+}
+
+.leg {
+	height: 80%;
+
+	background-color: transparent;
+
+}
+
+.acce {
+	height: 80%;
+
+	background-color: transparent;
+	z-index: 2;
+
+}
+
+.modifications {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.parts,
+.types {
+	background-color: #EEECEE;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+	padding: 10px;
+
+}
+
+.btn {
+	width: fit-content;
+	display: flex;
+	padding: 2%;
+	border: 1px solid #23509C;
+	background: transparent;
+	border-radius: 15px;
+	color: #23509C;
+	font-weight: medium;
+	font-size: larger;
+	transition: ease-out 0.4s;
+	margin: 5px;
+
+}
+
+.btn:hover,
+.btn:focus {
+	background-color: #23509C;
+	color: #EEECEE;
+}
+
+.modifications {
+	padding: 10px;
+	margin: 10px;
+}
+
+
+
+@media only screen and (max-width:750px) {
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+	}
+
+	.heading {
+		position: relative;
+		top: 10px;
+		left: 5%;
+	}
+
+	.image-container {
+
+		height: 45vh !important;
+		width: 90vw !important;
+		display: flex;
+		position: relative;
+		margin: 10%;
+
+	}
+
+	.background {
+
+		position: relative;
+	}
+
+	.modifications {
+
+		width: 100%;
+	}
+
+	.ears,
+	.hair,
+	.neck,
+	.nose,
+	.eyes,
+	.mouth,
+	.leg,
+	.acce {
+		position: absolute;
+		height: 80% !important;
+	}
 }
